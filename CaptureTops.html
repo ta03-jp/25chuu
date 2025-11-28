@@ -1,0 +1,50 @@
+<!-- 選択ボタン-グレー/ボタン追加 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>服の種類選択</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="images/title-clothing-selection.png"
+        alt="服の種類を選択してください"
+        class="title-image"
+      />
+
+      <div class="clothing-options">
+        <div class="clothing-box" id="tops" onclick="selectClothing('tops')">
+          <img src="images/topsgray.png" alt="トップス" />
+        </div>
+        <div
+          class="clothing-box"
+          id="bottoms"
+          onclick="selectClothing('bottoms')"
+        >
+          <img src="images/bottomsbtn.png" alt="ボトムス" />
+        </div>
+        <div
+          class="clothing-box"
+          id="onepiece"
+          onclick="selectClothing('onepiece')"
+        >
+          <img src="images//dressbtn.png" alt="ワンピース" />
+        </div>
+      </div>
+
+      <button
+        id="next-button"
+        class="next-button"
+        onclick="goToNext()"
+        style="display: none"
+      >
+        <img src="images/next.png" alt="次へ進む" />
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
