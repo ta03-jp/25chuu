@@ -66,78 +66,67 @@
 
       <div id="typeselectbtns">
         <button
-          id="tops"
+          id="outcamera"
           class="topbottom"
           onclick="toggleVisibility('tops-buttons')"
         >
-          <img src="images/topsbottom.png" alt="トップス" />
+          <img src="images/topsbtn.png" alt="トップス" />
         </button>
         <button
-          id="hiddenbottom"
+          id="bottom_outcamera"
           class="topbottom"
           onclick="toggleVisibility('bottoms-buttons')"
         >
           <img src="images/bottomsbtn.png" alt="ボトムス" />
         </button>
-        <button id="dress">
+        <button
+          id="dress_outcamera"
+          class="topbottom"
+          onclick="toggleVisibility('dress-buttons')"
+        >
           <img src="images/dressbtn.png" alt="ワンピース" />
         </button>
 
         <!-- 子ボタン: トップス -->
-        <div class="hidden-buttons" id="tops-buttons">
-          <button id="outcamera">
+        <div class="hidden-buttons" id="outcamera">
+          <!-- <button id="outcamera">
             <img src="images/outcamera.png" alt="置く" />
-          </button>
+          </button> -->
           <button id="incamera">
             <img src="images/incamera.png" alt="着用" />
           </button>
         </div>
 
         <!-- 子ボタン: ボトムス -->
-        <div class="hidden-buttons" id="bottoms-buttons">
-          <button id="bottom_outcamera">
+        <div class="hidden-buttons" id="bottom_outcamera">
+          <!-- <button id="bottom_outcamera">
             <img src="images/bottom_out.png" alt="置く" />
-          </button>
+          </button> -->
         </div>
+        <!-- 子ボタン：ワンピース -->
+        <div class="hidden-buttons" id="dress_outcamera"></div>
       </div>
 
-      <!-- <div id="typeselectbtns">
-        <button
-          id="tops"
-          class="topbottom"
-          onclick="toggleVisibility('tops-buttons')"
-        >
-          <img src="images/topsbottom.png" alt="トップス" />
+      <!-- <div>
+        <button id="button-area">
+          <img src="images/startbtn.png" alt="このテンプレートで作る" />
         </button>
-        <button
-          id="hiddenbottom"
-          class="topbottom"
-          onclick="toggleVisibility('bottoms-buttons')"
-        >
-          <img src="images/bottomsbtn.png" alt="ボトムス" />
-        </button>
-        <button id="dress">
-          <img src="images/dressbtn.png" alt="ワンピース" />
-        </button> -->
-
-      <!-- 子ボタン: トップス
-        <div class="hidden-buttons" id="tops-buttons">
-          <button id="outcamera">
-            <img src="images/outcamera.png" alt="置く" />
-          </button>
-          <button id="incamera">
-            <img src="images/incamera.png" alt="着用" />
-          </button>
-        </div> -->
-
-      <!-- 子ボタン: ボトムス
-        <div class="hidden-buttons" id="bottoms-buttons">
-          <button id="bottom_outcamera">
-            <img src="images/bottom_out.png" alt="置く" />
-          </button>
-        </div>
       </div> -->
     </div>
+
+    <!-- scr1.5: 選択確認画面 -->
+    <!-- <div class="scr" id="confirmType">
+      <img class="text" src="images/text_confirm.png" alt="選択内容を確認してください" />
+      <div id="selectedTypeArea"> -->
+    <!-- 選択された服種のグレー画像を表示 -->
+    <!-- <img id="selectedTypeImg" src="" alt="選択された服種" />
+      </div>
+      <button id="confirmNext">
+        <img src="images/nextbtn.png" alt="次へ進む" />
+      </button>
+    </div> -->
+
+    <!-- 服の種類選択確定画面 -->
 
     <!-- トップス画面orボトムス画面　(テンプレ選択) scr2 -->
     <div class="scr" id="tempselect">
@@ -360,23 +349,11 @@
 
     <!-- 最終画面 scr12 -->
     <div class="scr" id="final-screen">
-      <div class="text_8_9-div">
-        <img
-          class="text"
-          src="images/text_9_1.png"
-          alt="作成したテンプレートは"
-        />
-        <p>「 <span id="templateValue"></span> 」</p>
-        <img
-          id="text_9_2"
-          src="images/text_9_2.png"
-          alt="ダウンロードしたテンプレートはメタバースアプリにアップロードすることで使用可能です"
-        />
-      </div>
+      <div class="text_8_9-div"></div>
       <div class="result-image-div">
         <img
           class="result-image"
-          src="images/kansei_demo.png"
+          src="images/download_fin.png"
           alt="完成した型紙画像"
         />
       </div>
