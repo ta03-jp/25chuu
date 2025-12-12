@@ -1285,7 +1285,7 @@ function sendImageDataToAPI() {
     formData.append(fieldName, blob, `image${index}.png`);
   });
 
-  fetch("https://koi-settling-properly.ngrok-free.app/process_hoodie", {
+  fetch("https://koi-settling-properly.ngrok-free.app/process_images", {
     method: "POST",
     body: formData,
   })
@@ -1319,6 +1319,7 @@ function sendImageDataToAPI() {
       );
     });
 }
+
 
 
 
