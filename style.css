@@ -365,12 +365,6 @@ button {
   width: 300px; /* ボタングループの幅（調整可能） */
 }
 
-#result-image {
-  display: grid;
-  place-items: center; /* 縦横中央 */
-  /* height: 100vh; */
-}
-
 /* メニュー */
 header {
   background-color: #175493;
@@ -473,5 +467,6 @@ header {
 #Beforeshooting {
   text-align: center;
 }
+
 
 
