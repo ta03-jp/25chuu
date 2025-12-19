@@ -744,7 +744,7 @@ document.getElementById("toggle-camera").addEventListener("click", () => {
 document.getElementById("capture").addEventListener("click", () => {
   // タイマーの追加
   const timer = document.getElementById("timer");
-  let count = 1;
+  let count = 3;
   timer.style.display = "block"; // タイマーを表示
 
   // タイマーを更新する関数
@@ -867,7 +867,7 @@ document.addEventListener("DOMContentLoaded", () => {
   captureB.addEventListener("click", () => {
     // タイマーの追加
     const timerB = document.getElementById("timerB");
-    let count = 1;
+    let count = 3;
     timerB.style.display = "block"; // タイマーを表示
 
     // タイマーを更新する関数
@@ -1313,4 +1313,5 @@ function sendImageDataToAPI() {
       );
     });
 }
+
 
